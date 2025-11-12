@@ -1,0 +1,43 @@
+{% load static %}
+<header id="main-header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+        <a href="/" class="d-flex align-items-center gap-2 fw-bold fs-2 text-primary text-decoration-none">
+            <i class="fas fa-paw"></i>
+            <span>VetCare Connect</span>
+        </a>
+
+        <nav class="d-none d-md-flex gap-4 align-items-center">
+            <a href="/services" class="nav-link text-secondary">Services</a>
+            <a href="/team" class="nav-link text-secondary">Our Team</a>
+            <a href="/blog" class="nav-link text-secondary">Blog</a>
+            <a href="/contact" class="nav-link text-secondary">Contact</a>
+        </nav>
+
+        <div class="d-flex align-items-center gap-2">
+            <a href="/appointment" class="btn btn-primary d-none d-md-inline-flex">Book Appointment</a>
+
+            <button class="btn btn-outline-secondary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="mobile-menu">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Open menu</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="mobile-menu-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobile-menu-label">
+                <i class="fas fa-paw"></i> VetCare Connect
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <nav class="nav flex-column gap-2">
+                <a href="/services" class="nav-link text-secondary">Services</a>
+                <a href="/team" class="nav-link text-secondary">Our Team</a>
+                <a href="/blog" class="nav-link text-secondary">Blog</a>
+                <a href="/contact" class="nav-link text-secondary">Contact</a>
+            </nav>
+            <a href="/appointment" class="btn btn-success mt-auto">Book Appointment</a>
+        </div>
+    </div>
+</header>
